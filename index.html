@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="carta">
+    <h1>¡Hola mi amorcito 💜!</h1>
+    <p>Me preguntaba si... 👀:</p>
+    <div class="girasol">
+      <svg width="150" height="150" viewBox="0 0 150 150">
+        
+
+        <!-- Pétalos -->
+        <g class="petalos">
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(0, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(45, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(90, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(135, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(180, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(225, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(270, 75, 75)" />
+          <ellipse cx="75" cy="75" rx="20" ry="50" fill="#FFD700" transform="rotate(315, 75, 75)" />
+        </g>
+
+
+        <!-- Centro del girasol -->
+        <circle cx="75" cy="75" r="20" fill="#8B4513" />
+          <defs>
+            <linearGradient id="petalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+            </linearGradient>
+            <radialGradient id="centerGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+              <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#5A2D0C;stop-opacity:1" />
+            </radialGradient>
+          </defs>
+      </svg>
+    </div>
+    <p>Quieres ser mi San Valentin 🥳🥳</p>
+    <button id="carta-boton" class="carta-boton">Carta</button>
+    <button id="play-button" class="play-button">Reproducir Música</button>
+  </div>
+  <audio id="background-music" loop>
+    <source src="Caloncho - Hora Dorada.mp3" type="audio/mpeg">
+  </audio>
+  <!-- Música: Caloncho - Hora dorada -->
+  <!-- Fuente: https://www.youtube.com/watch?v=ETUh_04x6SM&ab_channel=CalonchoVEVO -->
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Para mi amor bonito, Aileen</h2>
+      <p>A veces tengo ganas de ser cursi
+        para decir: La amo a usted con locura.
+        A veces tengo ganas de ser tonto
+        para gritar: ¡La quiero tanto!
+        
+        A veces tengo ganas de ser niño
+        para llorar acurrucado en su seno.
+        
+        A veces tengo ganas de estar muerto
+        para sentir,
+        bajo la tierra húmeda de mis jugos,
+        que me crece una flor
+        rompiéndome el pecho,
+        una flor, y decir:
+        Esta flor, para usted.
+      </p>
+
+      <p> Te amo mucho amor! </p>
+      <p> Quieres ser mi san valentin, Patsy?</p>
+      <button id="yes-button" class="modal-button">Sí</button>
+      <button id="no-button" class="modal-button">No</button>
+      <div id="image-container" style="display: none;">
+        <img id="love-image" src="" alt="Imagen de amor" style="max-width: 100%; border-radius: 10px;">
+  </div>
+</div>
+
+<script src="index.js" defer></script>
+</body>
+</html>
